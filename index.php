@@ -23,7 +23,7 @@ var_dump($_GET);
 
 $inputPsw = $_GET['password'];
 
-function generateRandomPassword($length = 4)
+function generateRandomPassword($length = 8)
 {
     // Caratteri validi per la password
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_';
@@ -36,7 +36,7 @@ function generateRandomPassword($length = 4)
 
     // Genera caratteri casuali fino a raggiungere la lunghezza desiderata
     for ($i = 0; $i < $length; $i++) {
-        // Genera un numero casuale tra 0 e la lunghezza dei caratteri - 1
+        // Genera un numero casuale tra 0 e la lunghezza dei caratteri
         $randomIndex = random_int(0, $characterLength);
 
         // Aggiungi il carattere corrispondente alla password
@@ -70,6 +70,8 @@ var_dump($password)
         <div class="row">
             <div class="col mt-5">
                 <div class="card mt-5 p-5">
+
+                    <h3><?php echo $password; ?></h3>
 
                     <form action="./index.php" method="GET">
 
