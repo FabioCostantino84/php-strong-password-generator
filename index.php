@@ -28,9 +28,9 @@ Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, l
 
 <body>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col">
+    <div class="container mt-5 mx-5">
+        <div class="row mt-5">
+            <div class="col mt-5">
                 <div class="card mt-5 p-5">
 
                     <form action="./index.php" method="GET">
@@ -41,6 +41,32 @@ Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, l
 
                             <input type="text" class="form-control w-25" name="password" id="password">
                         </div>
+
+                        <!-- Radio boxs -->
+                        <div class="radioboxs">
+
+                            <!-- Radio Si -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDef" id="radioSi">
+                                <label class="form-check-label" for="radioSi">
+                                    Si
+                                </label>
+                            </div>
+
+                            <!-- Radio No -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDef" id="radioNo" checked>
+                                <label class="form-check-label" for="radioNo">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+
+                        
+
+
+                        
 
                     </form>
 
