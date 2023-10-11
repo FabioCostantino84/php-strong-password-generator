@@ -40,16 +40,16 @@ include __DIR__ . "/functions.php";
             <div class="col mt-5">
                 <div class="card mt-5 p-5">
 
-                    <h3><?php echo $password; ?></h3>
-
+                    
                     <form action="./index.php" method="GET">
-
+                        
                         <!-- Input text inserisci password -->
                         <div class="mb-3 d-flex justify-content-between">
                             <label for="password" class="form-label">Lunghezza password</label>
-
+                            
                             <input type="text" class="form-control w-25" name="password" id="password">
                         </div>
+                        <h3>Ecco la tua password casuale: <?php echo $password; ?></h3>
 
                         <!-- Radio boxs -->
                         <div class="radioboxs">Consenti ripetizioni di uno o più caratteri:

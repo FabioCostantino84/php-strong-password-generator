@@ -2,10 +2,11 @@
 
 var_dump($_GET);
 
-$inputPsw = $_GET['password'];
 
-function generateRandomPassword($length = 8)
-{
+function generateRandomPassword() {
+
+    $inputPsw = $_GET['password'];
+
     // Caratteri validi per la password
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_';
 
@@ -16,7 +17,7 @@ function generateRandomPassword($length = 8)
     $password = '';
 
     // Genera caratteri casuali fino a raggiungere la lunghezza desiderata
-    for ($i = 0; $i < $length; $i++) {
+    for ($i = 0; $i < strlen($inputPsw); $i++) {
         // Genera un numero casuale tra 0 e la lunghezza dei caratteri
         $randomIndex = random_int(0, $characterLength);
 
@@ -25,12 +26,12 @@ function generateRandomPassword($length = 8)
     }
 
     return $password;
-}
+};
 
 // Generazione di una password casuale
 $password = generateRandomPassword();
-echo $password;
+/* echo $password; */
 
-var_dump($password)
+/* var_dump($password) */
 
 ?>
