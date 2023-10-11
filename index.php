@@ -28,8 +28,8 @@ Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, l
 
 <body>
 
-    <div class="container mt-5 mx-5">
-        <div class="row mt-5">
+    <div class="container my-5">
+        <div class="row">
             <div class="col mt-5">
                 <div class="card mt-5 p-5">
 
@@ -62,11 +62,32 @@ Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, l
                             </div>
                         </div>
 
+                        <!-- Tutti i checkbox-->
+                        <div class="checkboxs d-flex flex-column justify-content-end align-items-end">
 
-                        
+                            <!-- Filtro per Lettere -->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="defaultCheck">
+                                <label class="form-check-label" for="defaultCheck">Lettere</label>
+                            </div>
+                            <!-- Filtro per Numeri -->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="defaultCheck">
+                                <label class="form-check-label" for="defaultCheck">Numeri</label>
+                            </div>
+                            <!-- Filtro per Simboli -->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="defaultCheck">
+                                <label class="form-check-label" for="defaultCheck">Simboli</label>
+                            </div>
+
+                        </div>
 
 
-                        
+
+
+
+
 
                     </form>
 
