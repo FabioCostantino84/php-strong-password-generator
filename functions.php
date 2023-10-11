@@ -5,9 +5,19 @@ var_dump($_GET);
 
 function generateRandomPassword() {
 
-    $inputPsw = $_GET['password'];
+    if (isset($_GET['password'])) {
 
-    // Caratteri validi per la password
+        $inputPsw = strlen($_GET['password']);
+
+        if ($inputPsw < 8) {
+            $error = 'inserisci almeno 8 caratteri';
+
+            return $error;
+            
+        } else {
+            $inputPsw = $_GET['password'];
+        
+            // Caratteri validi per la password
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_';
 
     // Calcola la lunghezza della stringa dei caratteri
@@ -23,6 +33,9 @@ function generateRandomPassword() {
 
         // Aggiungi il carattere corrispondente alla password
         $password .= $characters[$randomIndex];
+        }
+    }
+
     }
 
     return $password;

@@ -49,7 +49,8 @@ include __DIR__ . "/functions.php";
                             
                             <input type="text" class="form-control w-25" name="password" id="password">
                         </div>
-                        <h3>Ecco la tua password casuale: <?php echo $password; ?></h3>
+                        <h3>Ecco la tua password casuale: </h3>
+                        <h5 class=""><?php echo $password; ?></h5>
 
                         <!-- Radio boxs -->
                         <div class="radioboxs">Consenti ripetizioni di uno o più caratteri:
