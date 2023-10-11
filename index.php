@@ -43,7 +43,7 @@ Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, l
                         </div>
 
                         <!-- Radio boxs -->
-                        <div class="radioboxs">
+                        <div class="radioboxs">Consenti ripetizioni di uno o più caratteri:
 
                             <!-- Radio Si -->
                             <div class="form-check">
@@ -83,11 +83,9 @@ Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, l
 
                         </div>
 
-
-
-
-
-
+                        <!-- Bottoni per invio e annulla -->
+                        <button type="submit" class="btn btn-primary mt-3">Invia</button>
+                        <button type="reset" class="btn btn-secondary btn mt-3">Annulla</button>
 
                     </form>
 
